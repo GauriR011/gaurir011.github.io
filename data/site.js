@@ -53,8 +53,8 @@ window.SITE = {
       tags: ["Python", "Machine Learning", "Dash", "Plotly"] }
   ],
   education: [
-    { school: "The University of Texas at Austin", degree: "Master of Science in Data Science", dates: "Jan 2025 – May 2026", notes: ["GPA: 3.93 / 4", "[Add relevant coursework, thesis or awards]"] },
-    { school: "Heriot-Watt University, Dubai", degree: "BSc Computer Science (Data Science), First Class Honours", dates: "Sep 2021 – Jul 2024", notes: ["[Add dissertation, scholarships or awards]"] }
+    { school: "The University of Texas at Austin", degree: "Master of Science in Data Science", dates: "Jan 2025 – May 2026", notes: ["GPA: 3.93 / 4"] },
+    { school: "Heriot-Watt University, Dubai", degree: "BSc Computer Science (Data Science)", dates: "Sep 2021 – Jul 2024", notes: ["First Class Honors", "Deputy Principal's Award 2022, 2023, 2024"] }
   ],
   skills: [
     { group: "Programming languages", items: ["Python", "SQL", "Java", "R", "DAX"] },
@@ -66,9 +66,9 @@ window.SITE = {
     { group: "Automation & cloud", items: ["Power Automate", "Power Apps", "Azure Storage", "SharePoint", "ETL/ELT", "Workflow Automation"] }
   ],
   recognition: [
-    { title: "American Sign Language Recognition using Deep Learning Models", kind: "Publication", venue: "ICITA 2024 [confirm proceedings title]", date: "[Add date]", link: "https://link.springer.com/chapter/10.1007/978-981-96-1758-6_31", linkLabel: "View publication",
+    { title: "American Sign Language Recognition using Deep Learning Models", kind: "Publication", venue: "18th International Conference on Information Technology and Applications (ICITA 2024)", date: "2 October 2024", link: "https://link.springer.com/chapter/10.1007/978-981-96-1758-6_31", linkLabel: "View publication",
       text: "Hybrid ResNet50, Xception and BiLSTM models for classifying American Sign Language from short videos, with MediaPipe Holistic tracking hand and pose movement." },
-    { title: "Speaker at Women in Data Science UAE 2026", kind: "Speaker", venue: "He", date: "[Add date]", link: "", linkLabel: "", text: "[Add one line about your talk]" }
+    { title: "Speaker at Women in Data Science (WiDS Worldwide) UAE 2026", kind: "Speaker", date: "18 May 2026", link: "https://lnkd.in/p/d88FwPSw", linkLabel: "View Post", text: "Invited as a speaker at Women in Data Science 2026, engaging with a diverse community of researchers, industry professionals, students, and women leaders driving innovation and advancing the fields of Data Science and AI." }
   ],
   contactMessage: "Open to full-time AI/ML/Data Analytics roles, and interesting collaborations. Based in Dubai — UAE Golden Visa holder. "
 };
