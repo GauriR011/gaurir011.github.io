@@ -70,5 +70,5 @@ window.SITE = {
       text: "Hybrid ResNet50, Xception and BiLSTM models for classifying American Sign Language from short videos, with MediaPipe Holistic tracking hand and pose movement." },
     { title: "Speaker at Women in Data Science (WiDS Worldwide) UAE 2026", kind: "Speaker", date: "18 May 2026", link: "https://lnkd.in/p/d88FwPSw", linkLabel: "View Post", text: "Invited as a speaker at Women in Data Science 2026, engaging with a diverse community of researchers, industry professionals, students, and women leaders driving innovation and advancing the fields of Data Science and AI." }
   ],
-  contactMessage: "Open to full-time AI/ML/Data Analytics roles, and interesting collaborations."
+  contactMessage: "Open to full-time AI/ML/Data Analytics roles, and collaborations."
 };

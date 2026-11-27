@@ -23,7 +23,10 @@ $("#education-list").innerHTML=S.education.map(e=>`<article class="entry"><div c
 // $("#project-grid").innerHTML=P.map((p,i)=>`<article class="card" data-i="${i}"><img src="${esc(p.thumb)}" alt="${esc(p.alt)}" width="1200" height="360" loading="lazy"><div class="cb">${p.status==="in-progress"?'<span class="status">In progress</span>':""}<h3><button type="button" class="open" data-i="${i}" aria-haspopup="dialog">${esc(p.title)}</button></h3>${tags(p.tags)}<p>${esc(p.summary)}</p><div class="links"><button type="button" class="more open" data-i="${i}" aria-haspopup="dialog">Read more →</button>${p.github?ext(p.github,"GitHub"):""}${p.demo?ext(p.demo,p.demoLabel||"Live demo"):""}</div></div></article>`).join("");
 $("#project-grid").innerHTML=P.map((p,i)=>`<article class="card" data-i="${i}"><img src="${esc(p.thumb)}" alt="${esc(p.alt)}" width="1200" height="750" loading="lazy"><div class="cb">${p.status==="in-progress"?'<span class="status">In progress</span>':""}<h3><button type="button" class="open" data-i="${i}" aria-haspopup="dialog">${esc(p.title)}</button></h3>${tags(p.tags)}<p>${esc(p.summary)}</p><div class="links"><button type="button" class="more open" data-i="${i}" aria-haspopup="dialog">Read more →</button>${p.github?ext(p.github,"GitHub"):""}${p.demo?ext(p.demo,p.demoLabel||"Live demo"):""}</div></div></article>`).join("");
 $("#skills-list").innerHTML=S.skills.map(g=>`<div class="skill"><h3>${esc(g.group)}</h3>${tags(g.items)}</div>`).join("");
-$("#recognition-list").innerHTML=S.recognition.map(r=>`<article class="rec"><h3>${esc(r.title)}</h3><p class="meta">${esc(r.kind)} · ${ph(r.venue)} · ${ph(r.date)}</p><p>${ph(r.text)}</p>${r.link?`<p>${ext(r.link,r.linkLabel||"Link")}</p>`:""}</article>`).join("");
+$("#recognition-list").innerHTML=S.recognition.map(r=>`<article class="rec"><h3>${esc(r.title)}</h3><p class="meta">${esc(r.kind)} ${r.venue?`· ${ph(r.venue)}`:""}</p>
+${r.date?`<p class="meta">${ph(r.date)}</p>`:""}
+
+<p>${ph(r.text)}</p>${r.link?`<p>${ext(r.link,r.linkLabel||"Link")}</p>`:""}</article>`).join("");
 $("#contact-inner").innerHTML=`<h2>${esc(S.contactMessage)}</h2><a class="mail" href="mailto:${esc(S.email)}">${esc(S.email)}</a><div class="actions">${resumeBtn}${social()}</div>`;
 $("#footer").innerHTML=`© ${new Date().getFullYear()} ${esc(S.name)}`;
 
