@@ -59,3 +59,4 @@ window.PROJECTS = [
    problem:"[Describe the problem]", objective:"Support patients through daily interaction and well-being tracking.",
    approach:"A personalised chatbot generates structured journal entries from conversations, automated reporting turns them into insights, and a RAG system lets healthcare professionals query patient history and long-term trends.", results:"[Add outcome]" }
 ];
+

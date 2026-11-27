@@ -70,5 +70,5 @@ window.SITE = {
       text: "Hybrid ResNet50, Xception and BiLSTM models for classifying American Sign Language from short videos, with MediaPipe Holistic tracking hand and pose movement." },
     { title: "Speaker at Women in Data Science UAE 2026", kind: "Speaker", venue: "He", date: "[Add date]", link: "", linkLabel: "", text: "[Add one line about your talk]" }
   ],
-  contactMessage: "Interested in collaborating or discussing opportunities in Data Science, Analytics and AI? //n Feel free to get in touch."
+  contactMessage: "Open to full-time AI/ML/Data Analytics roles, and interesting collaborations. Based in Dubai — UAE Golden Visa holder. "
 };
