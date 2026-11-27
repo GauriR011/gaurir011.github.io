@@ -16,7 +16,7 @@ window.PROJECTS = [
    problem:"[Describe the problem caregivers face]", objective:"[Describe the goal of the app]",
    approach:"[Describe how Gemini, retrieval-augmented generation and the Flutter app fit together]", results:"[Add outcome, or mark as in progress]" },
  
-   { visible:true, status:"", title:"Research Copilot Lite", thumb:"assets/images/projects/research-copilot.svg", alt:"Placeholder thumbnail for Research Copilot Lite",
+   { visible:true, status:"", title:"Research Copilot Lite", thumb:"assets/images/projects/research-copilot.png", alt:"Placeholder thumbnail for Research Copilot Lite",
    summary:"A lightweight research assistant that answers questions over uploaded documents using retrieval-augmented generation, Gemini embeddings and a FAISS index, served through Streamlit.",
    tags:["RAG","Gemini embeddings","FAISS","Streamlit","Document processing"], github:"https://github.com/GauriR011/Research_Assistant", demo:"",
    problem:"[Describe the problem]", objective:"[Describe the goal]",
