@@ -2,8 +2,8 @@
    Text in [square brackets] is a placeholder and is shown in italics until replaced. */
 window.SITE = {
   name: "Gauri Revankar",
-  headline: "Data Science | Data Analytics | AI",
-  location: "Dubai, United Arab Emirates", // change if you prefer another location
+  headline: "Dubai, United Arab Emirates | UAE Golden Visa Holder",
+  // location: "Dubai, United Arab Emirates", // change if you prefer another location
   bio: "Master’s graduate in Data Science from the University of Texas at Austin with experience in data science, machine learning, and analytics-driven product insights. Skilled in using Python and SQL to analyse large-scale datasets, build predictive models, and develop dashboards that support business decision-making and performance tracking. Hands-on experience developing and evaluating deep neural networks, NLP solutions, Agentic AI and AI-powered applications using Python and open-source ML frameworks. ",
   photo: "assets/images/projects/Headshot_3.png", // replace with e.g. assets/images/profile.jpg
   photoAlt: "Portrait of Gauri Revankar",
@@ -70,5 +70,5 @@ window.SITE = {
       text: "Hybrid ResNet50, Xception and BiLSTM models for classifying American Sign Language from short videos, with MediaPipe Holistic tracking hand and pose movement." },
     { title: "Speaker at Women in Data Science (WiDS Worldwide) UAE 2026", kind: "Speaker", date: "18 May 2026", link: "https://lnkd.in/p/d88FwPSw", linkLabel: "View Post", text: "Invited as a speaker at Women in Data Science 2026, engaging with a diverse community of researchers, industry professionals, students, and women leaders driving innovation and advancing the fields of Data Science and AI." }
   ],
-  contactMessage: "Open to full-time AI/ML/Data Analytics roles, and interesting collaborations. Based in Dubai — UAE Golden Visa holder. "
+  contactMessage: "Open to full-time AI/ML/Data Analytics roles, and interesting collaborations."
 };
