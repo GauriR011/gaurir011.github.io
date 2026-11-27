@@ -10,9 +10,12 @@ const GH='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.500 11.
 const social=()=>`<a class="icon" href="${esc(S.linkedin)}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">${IN}</a><a class="icon" href="${esc(S.github)}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">${GH}</a>`;
 const resumeBtn=`<a class="btn" href="${esc(S.resume)}" download>Download resume</a>`;
 
+
 document.title=`${S.name} | Data Science, Analytics & AI`;
 $("#brand").textContent=S.name;
-$("#hero").innerHTML=`<div><h1>${esc(S.name)}</h1><p class="headline">${esc(S.headline)} · ${esc(S.location)}</p><p class="bio">${esc(S.bio)}</p><div class="actions">${resumeBtn}${social()}</div></div>
+$("#hero").innerHTML=`<div><h1>Hi! I'm Gauri 👋🏼</h1><p class="headline">${esc(S.headline)}</p>
+<p class="headline">${esc(S.location)}</p>
+<p class="bio">${esc(S.bio)}</p><div class="actions">${resumeBtn}${social()}</div></div>
 <div class="photo"><img src="${esc(S.photo)}" alt="${esc(S.photoAlt)}" width="340" height="340"></div>`;
 $("#lenses").innerHTML=S.lenses.map(l=>`<div class="lens"><h2>${esc(l.title)}</h2><p>${esc(l.text)}</p>${tags(l.tags)}</div>`).join("");
 $("#experience-list").innerHTML=S.experience.map(e=>`<article class="entry"><div class="dates"><span>${esc(e.dates)}</span><span class="place">${esc(e.place)}</span></div><div><h3>${esc(e.company)}</h3><p class="role">${esc(e.title)}</p><ul class="pts">${e.bullets.map(b=>`<li>${esc(b)}</li>`).join("")}</ul>${tags(e.tags)}</div></article>`).join("");
@@ -28,9 +31,16 @@ $("#footer").innerHTML=`© ${new Date().getFullYear()} ${esc(S.name)}`;
 
 /* project modal */
 const dlg=$("#modal");
-const field=(l,t)=>t?`<h4>${l}</h4><p>${ph(t)}</p>`:"";
+// const field=(l,t)=>t?`<h4>${l}</h4><p>${ph(t)}</p>`:"";
+const fmt=s=>esc(String(s==null?"":s))
+  .replace(/&lt;(\/?strong)&gt;/gi,"<$1>")
+  .replace(/\r?\n/g,"<br>");
+const field=(l,t,rich=false)=>t?`<h4>${l}</h4><p>${rich?fmt(t):ph(t)}</p>`:"";
+// function openProject(i){const p=P[i];
+//  $("#modal-body").innerHTML=`<div class="m"><button class="close" aria-label="Close">&times;</button><h2 id="m-title">${esc(p.title)}</h2>${p.status==="in-progress"?'<span class="status">In progress</span>':""}${field("ABOUT",p.problem)}${field("Objective",p.objective)}${field("Approach",p.approach)}<h4>Technologies</h4>${tags(p.tags)}${field("Outcome",p.results)}<div class="links" style="margin-top:22px">${p.github?ext(p.github,"GitHub"):""}${p.demo?ext(p.demo,p.demoLabel||"Live demo"):""}</div></div>`;
+//  dlg.showModal();}
 function openProject(i){const p=P[i];
- $("#modal-body").innerHTML=`<div class="m"><button class="close" aria-label="Close">&times;</button><h2 id="m-title">${esc(p.title)}</h2>${p.status==="in-progress"?'<span class="status">In progress</span>':""}${field("Problem",p.problem)}${field("Objective",p.objective)}${field("Approach",p.approach)}<h4>Technologies</h4>${tags(p.tags)}${field("Outcome",p.results)}<div class="links" style="margin-top:22px">${p.github?ext(p.github,"GitHub"):""}${p.demo?ext(p.demo,p.demoLabel||"Live demo"):""}</div></div>`;
+ $("#modal-body").innerHTML=`<div class="m"><button class="close" aria-label="Close">&times;</button><h2 id="m-title">${esc(p.title)}</h2>${p.status==="in-progress"?'<span class="status">In progress</span>':""}${field("About",p.problem,true)}${field("Objective",p.objective)}${field("Approach",p.approach)}<h4>Technologies</h4>${tags(p.tags)}${field("Outcome",p.results)}<div class="links" style="margin-top:22px">${p.github?ext(p.github,"GitHub"):""}${p.demo?ext(p.demo,p.demoLabel||"Live demo"):""}</div></div>`;
  dlg.showModal();}
 $("#project-grid").addEventListener("click",e=>{if(e.target.closest("a"))return;const c=e.target.closest(".card");if(c)openProject(+c.dataset.i)});
 dlg.addEventListener("click",e=>{if(e.target===dlg||e.target.closest(".close"))dlg.close()});

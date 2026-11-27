@@ -53,10 +53,25 @@ window.PROJECTS = [
    approach:"Data cleaning, feature engineering, scaling, encoding and class balancing, with correlation analysis of risk drivers such as credit score, net worth and debt-to-income ratio. Models were evaluated with precision, recall, F1, confusion matrices and ROC-AUC / PR-AUC curves.",
    results:"XGBoost performed best, reaching a 97% F1-score." },
  
-   { visible:true, status:"", title:"AlzBot: Web Application for Alzheimer's Patients", thumb:"assets/images/projects/remind.png", alt:"Placeholder thumbnail for AlzBot",
-   summary:"A conversational AI web application supporting Alzheimer's patients with daily interactions and well-being tracking, built on the Gemini API.",
-   tags:["Gemini API","RAG","Chatbot"], github:"https://github.com/GauriR011/Alz_chatbot", demo:"",
-   problem:"[Describe the problem]", objective:"Support patients through daily interaction and well-being tracking.",
-   approach:"A personalised chatbot generates structured journal entries from conversations, automated reporting turns them into insights, and a RAG system lets healthcare professionals query patient history and long-term trends.", results:"[Add outcome]" }
+  {
+  visible: true,
+  status: "",
+  title: "AlzBot: Web Application for Alzheimer's Patients",
+  thumb: "assets/images/projects/remind.png",
+  alt: "Placeholder thumbnail for AlzBot",
+  summary: "A conversational AI web application supporting Alzheimer's patients with daily interactions and well-being tracking, built on the Gemini API.",
+  tags: ["Gemini API", "RAG", "Chatbot"],
+  github: "https://github.com/GauriR011/Alz_chatbot",
+  demo: "",
+  problem: `ReMind is an innovative mobile application designed specifically for individuals with <strong>Alzheimer's disease</strong> and their caregivers.
+
+The app assists users in managing daily tasks, medications, and routines through an intuitive and user-friendly interface. ReMind offers a <strong>personalized chatbot</strong>, powered by the <strong>Gemini API</strong>, that engages users in daily conversations to track their activities and well-being. These interactions generate insightful reports that are automatically logged into a <strong>memory journal</strong>, accessible by healthcare professionals to monitor the patient's condition over time.
+
+In addition to its daily management tools, ReMind includes <strong>interactive games</strong> tailored to improve memory and cognitive skills. Users can enjoy a tile-matching game to enhance visual memory and a multiple-choice quiz that challenges recollection abilities. The app also prioritizes safety with an <strong>SOS feature</strong>, offering quick access to emergency contacts, location-based directions home, and a direct line to the police if needed.
+
+<strong>Target Audience:</strong>
+ReMind is tailored for individuals with Alzheimer's disease, providing them with essential support to maintain their independence and well-being. It is also a valuable tool for caregivers and healthcare professionals, offering insights into the patient's daily routine and cognitive progress.`
+}
+
 ];
 
