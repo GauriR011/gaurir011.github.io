@@ -18,7 +18,7 @@ window.SITE = {
   experience: [
     { company: "Apparel Group", title: "Data Analyst Intern", place: "Dubai, UAE", dates: "Jul 2024 – Sep 2024",
       bullets: [
-        "Analysed two years of product and sales data with <strong>SQL and Excel</strong> to identify seasonal trends across colour, material and subcategory, and developed performance metrics to support commercial insight.",
+        "Analysed two years of product and sales data with SQL and Excel to identify seasonal trends across colour, material and subcategory, and developed performance metrics to support commercial insight.",
         "Applied NLP topic modelling (Top2Vec, BERTopic) to customer feedback to surface recurring concerns, and presented the findings in an interactive Streamlit dashboard.",
         "Cleaned and processed large datasets using SQL and Python.",
         "Supported functionality testing for product listing page (PLP) boosting and new applications by writing test cases and giving feedback."],
